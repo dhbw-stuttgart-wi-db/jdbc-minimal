@@ -6,7 +6,7 @@ CREATE  TABLE IF NOT EXISTS `Kunde` (
 	`Kundennummer` VARCHAR(20) NOT NULL ,
 	`Name` VARCHAR(45) NOT NULL ,
 	`Wohnort` VARCHAR(45) NOT NULL ,
-	`Bonität` INT NOT NULL ,
+	`Bonitaet` INT NOT NULL ,
 	PRIMARY KEY (`Kundennummer`) 
 );
 
@@ -35,12 +35,12 @@ CREATE  TABLE IF NOT EXISTS `Kauf` (
 	FOREIGN KEY (`Filialnummer` ) REFERENCES `Filiale` (`Filialnummer` )
 );
 
-INSERT INTO `Kunde` (`Kundennummer`, `Name`, `Wohnort`, `Bonität`) VALUES ('K1', 'Becker', 'Stuttgart', 55);
-INSERT INTO `Kunde` (`Kundennummer`, `Name`, `Wohnort`, `Bonität`) VALUES ('K2', 'Fischer', 'Stuttgart', 17);
-INSERT INTO `Kunde` (`Kundennummer`, `Name`, `Wohnort`, `Bonität`) VALUES ('K3', 'Maier', 'Frankfurt', 56);
-INSERT INTO `Kunde` (`Kundennummer`, `Name`, `Wohnort`, `Bonität`) VALUES ('K4', 'Müller', 'Mannheim', 25);
-INSERT INTO `Kunde` (`Kundennummer`, `Name`, `Wohnort`, `Bonität`) VALUES ('K5', 'Schulze', 'Karlsruhe', 17);
-INSERT INTO `Kunde` (`Kundennummer`, `Name`, `Wohnort`, `Bonität`) VALUES ('K6', 'Wagner', 'Karlsruhe', 10);
+INSERT INTO `Kunde` (`Kundennummer`, `Name`, `Wohnort`, `Bonitaet`) VALUES ('K1', 'Becker', 'Stuttgart', 55);
+INSERT INTO `Kunde` (`Kundennummer`, `Name`, `Wohnort`, `Bonitaet`) VALUES ('K2', 'Fischer', 'Stuttgart', 17);
+INSERT INTO `Kunde` (`Kundennummer`, `Name`, `Wohnort`, `Bonitaet`) VALUES ('K3', 'Maier', 'Frankfurt', 56);
+INSERT INTO `Kunde` (`Kundennummer`, `Name`, `Wohnort`, `Bonitaet`) VALUES ('K4', 'Mueller', 'Mannheim', 25);
+INSERT INTO `Kunde` (`Kundennummer`, `Name`, `Wohnort`, `Bonitaet`) VALUES ('K5', 'Schulze', 'Karlsruhe', 17);
+INSERT INTO `Kunde` (`Kundennummer`, `Name`, `Wohnort`, `Bonitaet`) VALUES ('K6', 'Wagner', 'Karlsruhe', 10);
 
 INSERT INTO `Artikel` (`Artikelnummer`, `Bezeichner`, `Preis`) VALUES ('A1', 'Computer', 1000);
 INSERT INTO `Artikel` (`Artikelnummer`, `Bezeichner`, `Preis`) VALUES ('A2', 'HiFi-Anlage', 500);
