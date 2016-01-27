@@ -19,7 +19,7 @@ public class JdbcInteractive {
 		try {
 			// Connect to the database using the command line arguments
 			System.out.println("Connecting to " + args[0] + " as " + args[1]);
-			Connection connection = DriverManager.getConnection(args[0], args[1], args[2]);
+			Connection connection = DriverManager.getConnection(args[0] + "?useSSL=false", args[1], args[2]);
 			
 			// Create a reader that reads user input from the console
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
